@@ -1,2 +1,2 @@
-# C2 ladder 
+# C2 ladder🎯
 https://c2-ladders.com
