@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define pb push_back;
 int main(){
   int t;
   cin>>t; 
@@ -11,12 +10,13 @@ int main(){
     vector<int> v;
     for(int i=0;i<n;i++){
       int x; cin>>x;
-      v.pb(x);
+      v.push_back(x);
       sum+=v[i];
     }
-    if(sum/n==1) cout<<"0"<<endl;
-    else if(sum-n<0)<<"1"<<endl;
-    else cout<<sum-n<<endl;
+    float c=sum/n;
+    if(c==1) cout<<"0"<<endl;
+    else if(sum-n>0) cout<<sum-n<<endl;
+    else cout<<"1"<<endl;
   }
   return 0;
 }
