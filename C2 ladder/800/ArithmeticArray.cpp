@@ -13,10 +13,9 @@ int main(){
       v.push_back(x);
       sum+=v[i];
     }
-    float c=sum/n;
-    if(c==1) cout<<"0"<<endl;
-    else if(sum-n>0) cout<<sum-n<<endl;
-    else cout<<"1"<<endl;
+    if(sum-n<0) cout<<"1";
+    else cout<<sum-n;
+    cout<<endl;
   }
   return 0;
 }
